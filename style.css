@@ -1,0 +1,30 @@
+body {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.photo-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts {
+  margin-left: 100px;
+}
+
+img {
+  width: 300px;
+}
+
+.skills-code {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
