@@ -23,7 +23,7 @@ img {
   width: 300px;
 }
 
-.skills-code {
+.skills-code, .footer-course{
   display: flex;
   justify-content: space-around;
   align-items: center;
