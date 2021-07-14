@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CV Ihor Holysh</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+  <header>
+    <h1 class="hero">CV</h1>
+  </header>
+  <main>
+    <div class="photo-contacts">
+      <div class="photo">
+        <img src="photo.jpg" alt="My Photo">
+      </div>
+      <div class="contacts">
+        <h2>Ihor Holysh</h2>
+        <h3>My contacts:</h3>
+        <ul>
+          <li>Email: gigorasd@gmail.com</li>
+          <li>Github: <a href="https://github.com/Ig0r0k">Ig0r0k</a></li>
+          <li>Discord: Ig0r0k#1433</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="purpose">
+      <h3>Purpose of my training:</h3>
+      <p>I am interested in web development, and I want to learn how to develop on a high level, what I’m doing now
+        while studying in RSS. I am also interested in new technologies and development in the modern world. I have poor
+        technical knowledge for now but I try to do everything to fix it. I like training, it’s interesting :)</p>
+    </div>
+    <hr>
+    <div class="skills-code">
+      <div class="skills">
+        <div>
+          <h3>My skills:</h3>
+          <ul>
+            <li>HTML (basic).</li>
+            <li>CSS (basic).</li>
+            <li>JavaScript (basic).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="code">
+        <h3>Code examples:</h3>
+        <pre>
+                    <code>
+function validatePIN (pin) {
+    if (pin.length !== 4 && pin.length !== 6) {
+    return false;
+  }
+  for (let i = 0; i &lt; pin.length; i++) {
+    if (pin[i] &gt; '9' || pin[i] &lt; '0') {
+       return false;
+    }
+
+  }
+  return true;
+}
+// The function only accepts PIN numbers (length = 4 or 6);
+                    </code>
+                </pre>
+      </div>
+    </div>
+    <hr>
+    <div class="experience">
+      <h3>My experience:</h3>
+      <p>Temporarily no</p>
+    </div>
+    <hr>
+    <div class="education">
+      <h3>My education:</h3>
+      <ul>
+        <li><a href="https://www.sololearn.com/Certificate/1024-13114943/jpg/?mode=download">SoloLearn</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="language">
+      <h3>My English :</h3>
+      <p>English level A2.</p>
+    </div>
+  </main>
+  <hr>
+  <footer>
+    <h3>My contacts:</h3>
+        <ul>
+          <li>Email: gigorasd@gmail.com</li>
+          <li>Github: <a href="https://github.com/Ig0r0k">Ig0r0k</a></li>
+          <li>Discord: Ig0r0k#1433</li>
+        </ul>
+  </footer>
 </body>
+
 </html>
