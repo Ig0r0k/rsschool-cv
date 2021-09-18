@@ -59,7 +59,7 @@ h1 {
   margin-left: 100px;
 }
 
-img {
+.photo img {
   width: 300px;
 }
 
@@ -68,6 +68,20 @@ img {
   justify-content: space-around;
   align-items: center;
 }
+
+/* .myworks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+} */
+
+.myworks img {
+  width: 70%;
+}
+
+
 
 @media (max-width:767px) {
   .menu {
