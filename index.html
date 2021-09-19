@@ -7,6 +7,9 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>CV Ihor Holysh</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="a11y-dark.min.css">
+  <script src="highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -16,6 +19,22 @@
   </header>
 
   <main>
+    <nav class="menu">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#purpose" class="nav-link">Purposes</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#myworks" class="nav-link">My works</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#language" class="nav-link">My English</a></li>
+        <li><a href="#contacts" class="nav-link">Contacts</a></li>
+      </ul>
+      <!-- <div class="blackout"></div> -->
+    </nav>
     <div class="photo-contacts">
       <div class="photo">
         <img src="photo.jpg" alt="My Photo">
@@ -31,15 +50,16 @@
       </div>
     </div>
     <hr>
-    <div class="purpose">
+    <section class="purpose" id="purpose">
       <h3>Purpose of my training:</h3>
       <p>I am interested in web development, and I want to learn how to develop on a high level, what I’m doing now
         while studying in RSS. I am also interested in new technologies and development in the modern world. I have poor
         technical knowledge for now but I try to do everything to fix it. I like training, it’s interesting :)</p>
-    </div>
+    </section>
     <hr>
-    <div class="skills-code">
-      <div class="skills">
+    <article class="skills-code">
+      <h6>skills-code</h6>
+      <section class="skills" id="skills">
         <div>
           <h3>My skills:</h3>
           <ul>
@@ -48,7 +68,7 @@
             <li>JavaScript (basic).</li>
           </ul>
         </div>
-      </div>
+      </section>
       <div class="code">
         <h3>Code examples:</h3>
         <pre>
@@ -69,29 +89,51 @@ function validatePIN (pin) {
                     </code>
                 </pre>
       </div>
-    </div>
+    </article>
     <hr>
-    <div class="experience">
+    <section class="experience" id="experience">
       <h3>My experience:</h3>
       <p>Temporarily no</p>
-    </div>
+    </section>
     <hr>
-    <div class="education">
+    <section class="myworks" id="myworks">
+      <h3>My works:</h3>
+      <figure>
+        <a href="https://rolling-scopes-school.github.io/ig0r0k-JSFEPRESCHOOL/museum" target="_blank"><img src="museum.png" alt="museum"></a>
+        <figcaption><b>Museum.</b><br>Training project Museum in RS-School.<br>HTML + CSS + JS</figcaption>
+      </figure>
+      <figure>
+        <a href="https://rolling-scopes-school.github.io/ig0r0k-JS2020Q3/shelter" target="_blank"><img src="shelter.png" alt="shelter"></a>
+        <figcaption><b>Shelter.</b><br>Training project Shelter in RS-School.<br>HTML + CSS + JS</figcaption>
+      </figure>
+      <figure>
+        <a href="https://rolling-scopes-school.github.io/ig0r0k-JS2020Q3/momentum" target="_blank"><img src="momentum.png" alt="momentum"></a>
+        <figcaption><b>Momentum.</b><br>Training project Momentum in RS-School.<br>HTML + CSS + JS</figcaption>
+      </figure>
+    </section>
+    <hr>
+    <section class="education" id="education">
       <h3>My education:</h3>
       <ul>
         <li><a href="https://www.sololearn.com/Certificate/1024-13114943/jpg/?mode=download">SoloLearn</a></li>
+        <li><a href="https://app.rs.school/certificate/fken3g4o">RS-School FE stage0</a></li>
       </ul>
-    </div>
+    </section>
     <hr>
-    <div class="language">
+    <section class="language" id="language">
       <h3>My English :</h3>
       <p>English level A2.</p>
+    </section>
+    <hr>
+    <div class="profile-video">
+      <h3>My Video :</h3>
+      <iframe id="ytube" width="560" height="315" src="https://www.youtube.com/embed/Sw7Kvlvy7ig" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </main>
 
   <hr>
 
-  <footer>
+  <footer id="contacts">
     <h3>My contacts:</h3>
     <ul>
       <li>Email: gigorasd@gmail.com</li>
@@ -104,6 +146,7 @@ function validatePIN (pin) {
       <h3>2021</h3>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
