@@ -12,6 +12,15 @@ body {
 
 h1 {
   text-align: center;
+  color: blue;
+}
+
+h2 {
+  color: rgb(0, 0, 119);
+}
+
+h3 {
+  color: rgb(19, 18, 18);
 }
 
 .menu {
@@ -42,13 +51,9 @@ h1 {
   color: grey;
 }
 
-
-
-
-
-
-
-
+.contacts a {
+  text-decoration: none;
+}
 
 .photo-contacts {
   display: flex;
@@ -69,23 +74,26 @@ h1 {
   align-items: center;
 }
 
-/* .myworks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-} */
-
 .myworks img {
   width: 70%;
 }
 
+.profile-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
 
+@media (max-width:900px) {
+  body {
+    width: 100%;
+  }
+}
 
 @media (max-width:767px) {
   .menu {
-    width: 200px;
+    width: 60px;
   }
 
   .hamburger {
@@ -133,12 +141,21 @@ h1 {
   .nav-link {
     font-size: 20px;
   }
+}
 
+@media (max-width:640px) {
+  .photo-contacts {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 
+  .skills-code {
+    flex-direction: column;
+  }
+}
 
-
-
-
-
-
+@media (max-width:480px) {
+  code {
+    font-size: 8px;
+  }
 }
