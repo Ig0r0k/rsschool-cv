@@ -28,3 +28,7 @@ img {
   justify-content: space-around;
   align-items: center;
 }
+
+.footer-img {
+  height: 50px;
+}
